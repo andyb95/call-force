@@ -7,12 +7,12 @@ import './Day.css'
 export default function Day(props){
 
   return(
-    <Link 
-      to = '/availability'
-      key={props.key}
-      className = 'day'
-    >
+    
 
+    <Link 
+      to = {`/availability/${props.id}`}
+      className = 'day link'
+    >
       {props.day}
     </Link>
   )

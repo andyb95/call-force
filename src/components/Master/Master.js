@@ -12,11 +12,11 @@ export default function Master(){
   return(
     <div className = 'master'>Master.js
     <div className = 'days'>
-      {days.map(e => {
+      {days.map((day, index) => {
         return(
           <Day 
-            key={e.id}
-            day={e}
+            id={index+1}
+            day={day}
           />
           )
         })

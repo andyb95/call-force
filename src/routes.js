@@ -6,6 +6,6 @@ import Availability from './components/Availability/Availability'
 export default (
   <Switch>
     <Route exact path='/' component={Master} />
-    <Route path='/availability' component={Availability} />
+    <Route path='/availability/:day' component={Availability} />
   </Switch>
 )
