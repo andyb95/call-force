@@ -8,43 +8,43 @@ export default function Availability(props){
   const [formOpen, setFormOpen] = useState(false)
   const [availability, setAvailability] = useState([
     {
-      time: '9:00',
+      time: 9,
       Doctor: 'false',
       Assistant: 'false',
       Hygenist: 'false'
     },
     {
-      time: '10:00',
+      time: 10,
       Doctor: 'false',
       Assistant: 'false',
       Hygenist: 'false'
     },
     {
-      time: '11:00',
+      time: 11,
       Doctor: 'false',
       Assistant: 'false',
       Hygenist: 'false'
     },
     {
-      time: '12:00',
+      time: 12,
       Doctor: 'false',
       Assistant: 'false',
       Hygenist: 'false'
     },
     {
-      time: '1:00',
+      time: 13,
       Doctor: 'false',
       Assistant: 'false',
       Hygenist: 'false'
     },
     {
-      time: '2:00',
+      time: 14,
       Doctor: 'false',
       Assistant: 'false',
       Hygenist: 'false'
     },
     {
-      time: '3:00',
+      time: 15,
       Doctor: 'false',
       Assistant: 'false',
       Hygenist: 'false'
@@ -74,7 +74,7 @@ export default function Availability(props){
         {availability ? (availability.map(e => {
           return (
             <div className = 'row'>
-              <div className = 'time box'>{e.time}</div>
+              <div className = 'time box'>{e.time}:00</div>
               <div className = 'cell box'>{e.Doctor}</div>
               <div className = 'cell box'>{e.Assistant}</div>
               <div className = 'cell box'>{e.Hygenist}</div>
