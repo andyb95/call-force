@@ -3,7 +3,7 @@
   border-style: solid;
   position: relative;
   height: 175px;
-  width: 300px;
+  width: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,6 +11,7 @@
   margin: 0 auto;
   padding: 25px;
   border-radius: 10px;
+  z-index: 3
 }
 
 .escape{
@@ -19,8 +20,20 @@
   top: 5px;
 }
 
+.form-section{
+  position: relative;
+}
+
+.form-label{
+  font-size: small;
+  position: absolute;
+  left: 0px;
+  top: -20px;
+  margin-bottom: 25px;
+}
+
 .form-input{
-  margin: 5px;
+  margin: 15px;
   height: 20px;
-  width: 250px;
+  width: 125px;
 }

@@ -1,11 +1,11 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import Day from '../Day/Day'
 
 import './Master.css'
 
 export default function Master(){
 
-  const [days, setDays] = useState(['sun','m','t','w','th','f','sat'])
+  const [days] = useState(['sun','m','t','w','th','f','sat'])
 
     
 

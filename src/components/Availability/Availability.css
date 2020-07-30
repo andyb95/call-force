@@ -11,14 +11,60 @@
 .chart{
   position: relative;
   margin-top: 40px;
-  display: grid;
-  grid-template-columns: 7%, 31%, 31%, 31%;
-  grid-template-rows: 25px, 50px, 50px, 50px, 50px, 50px, 50px, 50px;
+  width: 75%;
+  height: 75%;
 }
 
-.roles{
+.box{
+  box-sizing: content-box;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  
 }
 
-.times{
+/* .columns{
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+} */
 
+/* .times{
+  padding-top: 30px;
+  width: 200px;
+  height: 100%;
+} */
+
+/* .column{
+  width: 100%;
+  height: 25px;
+  
+} */
+
+.row{
+  position: relative;
+  width: 100%;
+  display: flex;
 }
+
+.time{
+  
+  height: 50px;
+  width: 60px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.cell{
+  height: 50px;
+  width: 33%;
+}
+
+.top{
+  height: 25px;
+}
+
+
+
