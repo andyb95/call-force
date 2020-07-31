@@ -1,13 +1,13 @@
 import React from 'react';
-import routes from './routes'
 import Nav from './components/Nav/Nav'
 import './App.css';
+import Availability from './components/Availability/Availability';
 
 function App() {
   return (
     <div className="App">
       <Nav/>
-      {routes}
+      <Availability />
     </div>
   );
 }

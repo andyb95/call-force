@@ -1,7 +1,9 @@
 .form{
   box-sizing: content-box;
   border-style: solid;
-  position: relative;
+  position: absolute;
+  left: calc(60px + 39%);
+  top: 50px;
   height: 175px;
   width: 150px;
   display: flex;
@@ -11,13 +13,15 @@
   margin: 0 auto;
   padding: 25px;
   border-radius: 10px;
-  z-index: 3
+  z-index: 3;
+  background-color: white;
 }
 
 .escape{
   position: absolute;
-  right: 5px;
+  right: 0px;
   top: 5px;
+  border-style: none;
 }
 
 .form-section{

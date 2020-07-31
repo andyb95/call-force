@@ -27,14 +27,25 @@ export default function Form (props){
   const handleSubmit = (e) => {
     e.preventDefault()
     const {role, start, end} = formValues
+    const avail = props.availability
     if (!role ){
       alert('Please enter role')
-    } else if (!+start>=+end){
-      alert('Please enter vaild times')
+    } else if (+start>=+end){
+      alert('Please enter a vaild time block')
     } else {
-      for(let i = 0; i < props.availability.length; i++){
-        console.log(props.availability[i])
+      for(let i = 0; i < avail.length; i++){
+        if (avail[i].time >= start && avail[i].time < end){
+          if (role === 'Doctor'){
+            avail[i].Doctor = true
+          } else if(role === 'Assistant') {
+            avail[i].Assistant = true
+          } else {
+            avail[i].Hygenist = true
+          }
+        }
       }
+      props.setAvailability(avail)
+      props.closeForm(false)
     }
   }
 
