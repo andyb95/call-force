@@ -8,47 +8,35 @@ export default function Availability(props){
   const [formOpen, setFormOpen] = useState(false)
   const [availability, setAvailability] = useState([
     {
-      time: 9,
-      Doctor: false,
-      Assistant: false,
-      Hygenist: false
+      role: 'Doctor',
+      9: false,
+      10: false,
+      11: false,
+      12: false,
+      13: false,
+      14: false,
+      15: false,
     },
     {
-      time: 10,
-      Doctor: false,
-      Assistant: false,
-      Hygenist: false
+      role: 'Assistant',
+      9: false,
+      10: false,
+      11: false,
+      12: false,
+      13: false,
+      14: false,
+      15: false,
     },
     {
-      time: 11,
-      Doctor: false,
-      Assistant: false,
-      Hygenist: false
-    },
-    {
-      time: 12,
-      Doctor: false,
-      Assistant: false,
-      Hygenist: false
-    },
-    {
-      time: 13,
-      Doctor: false,
-      Assistant: false,
-      Hygenist: false
-    },
-    {
-      time: 14,
-      Doctor: false,
-      Assistant: false,
-      Hygenist: false
-    },
-    {
-      time: 15,
-      Doctor: false,
-      Assistant: false,
-      Hygenist: false
-    },
+      role: 'Hygenist',
+      9: false,
+      10: false,
+      11: false,
+      12: false,
+      13: false,
+      14: false,
+      15: false,
+    }
   ])
 
 
